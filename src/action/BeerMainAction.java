@@ -13,8 +13,7 @@ public class BeerMainAction implements Action {
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse respone) throws Exception {
-<<<<<<< HEAD
-		// TODO Auto-generated method stub
+
 		System.out.println("BeerMainAction");
 		ArrayList<ShopBean> bestList = null;
 		ArrayList<ShopBean> saleList = null;
@@ -25,21 +24,6 @@ public class BeerMainAction implements Action {
 		bestList = beerMainService.getBestList();
 		saleList = beerMainService.getSaleList();
 		newList = beerMainService.getNewList();
-		
-		
-		
-=======
-		System.out.println("BeerMainAction");
-		ArrayList<ShopBean> bestList = null;
-		ArrayList<ShopBean> saleList = null;
-		ArrayList<ShopBean> newList = null;
-		
-		
-		BeerMainService beerMainService = new BeerMainService();
-		bestList = beerMainService.getBestList();
-		saleList = beerMainService.getSaleList();
-		newList = beerMainService.getNewList();
->>>>>>> branch 'master' of https://github.com/oh1993oh/MantaBeer.git
 		
 		
 		request.setAttribute("bestList", bestList);

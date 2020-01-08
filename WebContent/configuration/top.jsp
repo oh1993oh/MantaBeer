@@ -2,8 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-<<<<<<< HEAD
-// 	session.setAttribute("user_id", "test");
+
 	String user_id = null;
 	int cartQuantity = 0;
 	if (session.getAttribute("user_id") != null) {
@@ -11,16 +10,6 @@
 		ShopService shopService = new ShopService();
 		cartQuantity = shopService.getCartQuantity(user_id);
 	}
-	
-=======
-	String user_id = null;
-	int cartQuantity = 0;
-	if (session.getAttribute("user_id") != null) {
-		user_id = (String) session.getAttribute("user_id");
-		ShopService shopService = new ShopService();
-		cartQuantity = shopService.getCartQuantity(user_id);
-	}
->>>>>>> branch 'master' of https://github.com/oh1993oh/MantaBeer.git
 %>
 <!DOCTYPE html>
 <html>

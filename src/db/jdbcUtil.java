@@ -30,53 +30,7 @@ public class jdbcUtil {
 		return con;
 	}
 	
-<<<<<<< HEAD
-	
-	public static void close(Connection con) {
-		try {
-			con.close();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	
-	public static void close(Statement stmt) {
-		try {
-			stmt.close();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	
-	public static void close(ResultSet rs) {
-		try {
-			rs.close();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	
-	
-	public static void commit(Connection con) {
-		try {
-			con.commit();
-			System.out.println("Commit success!");
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	
-	public static void rollback(Connection con) {
-		try {
-			con.rollback();
-			System.out.println("Rollback success!");
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-=======
+
 	public static void close(Connection con) {
 		try {
 			con.close();
@@ -116,7 +70,6 @@ public class jdbcUtil {
 			con.rollback();
 			System.out.println("Rollback success!");
 		} catch (SQLException e) {
->>>>>>> branch 'master' of https://github.com/oh1993oh/MantaBeer.git
 			e.printStackTrace();
 		}
 	}

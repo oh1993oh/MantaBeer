@@ -31,11 +31,7 @@
 	<div id="loginForm">
 		<form action="LoginPro.me" method="post">
 				<div class="login_menu">
-<<<<<<< HEAD
-					<label style="margin:10px;">아이디</label>
-=======
 					<label style=" margin: 10px;">아이디</label>
->>>>>>> branch 'master' of https://github.com/oh1993oh/MantaBeer.git
 					<input type="text" name="user_id" required="required" size="20" style="position: relative;left: 7px;">
 				</div>
 				<div class="login_menu">
