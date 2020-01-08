@@ -1,0 +1,547 @@
+@charset "UTF-8";
+
+.section_sestion{
+	/* border: 1px solid black; */
+}
+
+.body_sestion {
+	/* border: 1px solid red; */
+}
+
+.reservation_img{
+	float: left;
+}
+.date_pi{
+	width: 269px;
+    /* border: 1px solid red; */
+    position: relative;
+    left: 100px;
+    top: 41px;
+}
+
+.datepiker_article {
+	float: left;
+    position: relative;
+    width: 506px;
+    height: 341px;
+    border: 1px solid gray;
+}
+.datepiker{
+    position: relative;
+	left: 26px;
+}
+
+.time_section{
+	top: -402px;
+    margin: 0;
+    border: 1px solid gray;
+    clear: both;
+    width: 506px;
+    position: relative;
+    left: 602px;
+}
+
+.main {
+	border: 4px double red;
+	margin: 50px 30px;
+	padding: 30px;
+	width: 500px;
+	float: left;
+}
+
+.reservation {
+	/* border: 1px solid red; */
+	padding: 2px;
+	width: 450px;
+	float: left;
+}
+
+#scroll_menu {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	right: 165px;
+	top: 500px;
+}
+.result_h{
+	width: 30%;
+    text-align: center;
+}
+.result_td {
+	width: 80px;
+	text-align: center;
+}
+.result_p{
+	float: left;
+   /*  border: 1px solid red; */
+    margin: 10px;
+    width: 100px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.result_input{
+	float: left;
+	/* border: 1px solid red; */
+	margin: 10px;
+}
+
+#reser_click {
+	width: 85px;
+    height: 49px;
+    background-color: black;
+    border-radius: 23px;
+    border: none;
+    color: white;
+    padding: 9px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    position: relative;
+    left: 270px;
+}
+
+출처: https: //nimolove.tistory.com /44 [니모네]
+
+.price-in {
+	background:
+		url("../images/beer/clear-glass-mug-filled-with-yellow-liquid-1672304.jpg")
+		no-repeat;
+	background-position: center center;
+	margin: 30px;
+	float: left;
+	width: 120px;
+	height: 120px;
+	cursor: pointer;
+}
+/*방 section */
+.click {
+	display: block;
+	width: 55px;
+	height: 41px;
+	background-image: url('../images/print/Test용.jpg');
+	background-position: 0 -78px;
+}
+
+.close {
+	display: block;
+	width: 42px;
+	height: 16px;
+	position: relative;
+	left: -600px;
+	background-position: -166px -78px;
+}
+
+.img {
+	float: left;
+	position: relative;
+	left: -465px;
+}
+
+.room_sec {
+	background-image: url('../images/print/Test용.jpg');
+	background-repeat: no-repeat;
+	display: block;
+	background-position: 0 -78px;
+	float: left;
+}
+
+.blind {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	margin: -1px;
+	width: 1px;
+	height: 1px;
+}
+
+.room_sec:hover, .close:hover {
+	cursor: pointer;
+}
+
+.icons {
+	position: absolute;
+	background-image: url(../images/print/Test용2.png);
+	width: 55px;
+	height: 51px;
+	top: -37px;
+	left: -467px;
+}
+
+.icon:after {
+	background-image:
+		url("./images/print/gps_location_navigation_pin_icon_127148.png");
+}
+
+/*테이블 관련 */
+.cont{
+	/* border: 1px solid red; */
+	float: left
+}
+
+.notis_area {
+	/*visibility: hidden; */
+    margin: 6px;
+    width: 613px;
+    height: 361px;
+    float: left;
+    border: 1px solid gray;
+    position: relative;
+    left: 13px;
+	
+}
+#room_dsize {
+	position: relative;
+    top: -396px;
+    left: -2px;
+    width: 1110px;
+    height: 788px;
+    border: 1px solid gray;
+    margin: 0px;
+}
+
+.container-time-room {
+	/* visibility: hidden; */
+	
+}
+
+.container-time-text {
+	display: block;
+	position: relative;
+}
+
+.part_content{
+	/* border: 1px solid red; */
+	position: relative;
+/*     left: 240px; */
+}
+
+.group-1 {
+	text-align: center;
+    margin: 20px;
+    display: inline;
+    float: left;
+    width: 110px;
+    padding: 10px;
+}
+
+.group-2 {
+	text-align: center;
+    margin: 20px;
+    padding: 10px;
+    width: 103px;
+    display: inline;
+    float: left;
+}
+
+.group-3 {
+	text-align: center;
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    display: inline;
+    float: left;
+}
+.area_group_1{
+	position: absolute;
+    left: -700px;
+    text-align: center;
+    margin: 20px;
+    display: inline;
+    float: left;
+    width: 165px;
+    padding: 10px;
+}
+.area_group_2{
+	position: absolute;
+    left: -700px;
+    text-align: center;
+    margin: 20px;
+    display: inline;
+    float: left;
+    width: 165px;
+    padding: 10px;
+}
+
+
+
+.time-in {
+	background-color: #060200;
+    border: 3px solid #060200;
+    border-radius: 20px 20px 20px 20px;
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    width: 129px;
+    height: 40px;
+    color: white;
+    visibility: visible;
+}
+
+#textarea {
+	height: 500px;
+}
+/* 테이블 관련 css */
+.table-td {
+	border: 5px solid yellow;
+	float: left;
+	width: 366px;
+}
+
+#table-section {
+	/* border: 5px solid yellow; */
+}
+
+.time_select {
+	
+}
+
+.td_name {
+	background-color: yellow;
+	color: white;
+}
+
+/* 방 번호들 소방안전*/
+/* #rnum-1{
+	position:  relative;
+	top: -350px;
+	left: 210px;
+}
+#rnum-2{
+	position:  relative;
+	top: -500px;
+	left: 210px;
+}
+#rnum-3{
+	position:  relative;
+	top: -500px;
+	left: 220px;
+}
+#rnum-4{
+	position:  relative;
+	top: -500px;
+	left: 100px;
+}
+#rnum-5{
+	position:  relative;
+	top: -383px;
+	left: 255px;
+}
+#rnum-6{
+	position:  relative;
+	top: -270px;
+	left: 170px;
+}
+#rnum-7{
+	position:  relative;
+	top: -270px;
+	left: 241px;
+}
+ */
+/* 이미지 후보 2 */
+
+/* 방 번호들 후보군 1*/
+#rnum-11 {
+	visibility: inherit;
+	color: white;
+	text-align: center;
+	border: 3px solid white;
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	top: 197px;
+	left: 922px;
+	font-size: 20px;
+    font-weight: bold;
+}
+
+#rnum-22 {
+	visibility: inherit;
+	color: white;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	width: 124px;
+	height: 172px;
+	top: 62px;
+	left: 763px;
+	border: 3px solid white;
+	font-size: 20px;
+    font-weight: bold;
+}
+
+#rnum-33 {
+	visibility: inherit;
+	color: white;
+	text-align: center;
+	border: 3px solid white;
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 111px;
+	top: -287px;
+	left: 841px;
+	font-size: 20px;
+    font-weight: bold;
+}
+
+#rnum-44 {
+	visibility: inherit;
+	color: white;
+	text-align: center;
+	border: 3px solid white;
+	position: relative;
+	display: inline-block;
+	width: 158px;
+	height: 90px;
+	top: 595px;
+	left: 834px;
+	font-size: 20px;
+    font-weight: bold;
+}
+
+#rnum-55 {
+	visibility: inherit;
+    color: white;
+    text-align: center;
+   border: 3px solid white;
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 125px;
+    top: -25px;
+    left: 682px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#rnum-66 {
+	visibility: inherit;
+    color: white;
+    text-align: center;
+   border: 3px solid white;
+    position: relative;
+    display: inline-block;
+    width: 128px;
+    height: 140px;
+    top: 236px;
+    left: 1007px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#rnum-77 {
+	visibility: inherit;
+    color: white;
+    border: 3px solid white;
+    position: relative;
+    display: inline-block;
+    width: 88px;
+    height: 159px;
+    top: 29px;
+    left: 640px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#fourroom {
+	background-color: pink;
+}
+
+/*  요청사항*/
+.notice_info {
+	position: relative;
+	top: -1000px;
+	left: 500px;
+}
+
+.text-h {
+	position: relative;
+	
+}
+
+
+.text_area{
+	/* border: 1px solid gray; */
+	width: 75%;
+    height: 101%;
+    position: relative;
+    left: 31px;
+}
+
+/*상품-> 메뉴  */
+#b-info {
+	position: relative;
+	top: 80px;
+}
+
+.check_box {
+	position: relative;
+	top: -20px;
+}
+
+.num_up_down {
+	display: block;
+}
+
+.num-atr {
+	position: relative;
+	top: -20px;
+}
+
+.num_up_down1 {
+	position: relative;
+	top: -7px;
+	left: -4px;
+}
+
+.num_up_down2 {
+	position: relative;
+	top: 6px;
+	left: -31px;
+}
+
+
+.result-area{
+	border: 1px solid gray;
+    display: inline-block;
+    clear: both;
+    width: 613px;
+    height: 396px;
+    margin: 6px;
+    position: relative;
+    left: 13px;
+}
+/*   호버 시 메뉴 호출
+.none{
+	display: none;
+}
+.price-in{display: inline-block;}
+.price-in:hover{background: #555;}
+.price-in:hover div {display: block;}
+.price-in .none{
+	position: absolute;
+	
+	width: 200px;
+	display: none;
+}
+
+.price-in .none p{
+	background : #555;
+	display: block;
+}
+.price-in ul li span{ display: block !important;}
+.price-in ul li:hover{background: #666;}
+*/
+.nav {
+	border: 1px solid green;
+	width: 250px;
+	height: 200px;
+	float: right;
+	position: relative;
+	top: 200px;
+	right: 100px;
+}
