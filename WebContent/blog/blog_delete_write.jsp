@@ -84,8 +84,15 @@
   <section id="commandCell">
   
  
+<<<<<<< HEAD
  <input type="submit" value="삭제" class="btn btn-primary py-2 px-3" />&nbsp;&nbsp;
  <input type="button" value="뒤로" class="btn btn-primary py-2 px-3" onclick="history.go(-1)" />
+=======
+<!--  <a href="beer_blog.html" class="btn btn-primary py-2 px-3">삭제</a> -->
+ <input type="submit" value="삭제" class="btn btn-primary py-2 px-3" />&nbsp;&nbsp;
+ <input type="button" value="뒤로" class="btn btn-primary py-2 px-3" onclick="history.go(-1)" />
+<!-- <a href="beer_blog.html" class="btn btn-primary py-2 px-3">뒤로</a> -->
+>>>>>>> branch 'master' of https://github.com/oh1993oh/MantaBeer.git
 
   </section>
     </form>

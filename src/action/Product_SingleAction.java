@@ -16,12 +16,21 @@ public class Product_SingleAction implements Action {
 
    @Override
    public ActionForward execute(HttpServletRequest request, HttpServletResponse respone) throws Exception {
+<<<<<<< HEAD
       // TODO Auto-generated method stub
 	  System.out.println("Product_SingleAction");
       int product_num = Integer.parseInt(request.getParameter("product_num"));
       String page = request.getParameter("page");//$$notNecessarily
       
 //      System.out.println("board_num:"+ board_num + "page:"+ page);
+=======
+	  System.out.println("Product_SingleAction");
+      int product_num = Integer.parseInt(request.getParameter("product_num"));
+      String page = request.getParameter("page");//$$notNecessarily
+      
+//      System.out.println("board_num:"+ board_num + "page:"+ page);
+      System.out.println(page);
+>>>>>>> branch 'master' of https://github.com/oh1993oh/MantaBeer.git
       
       ActionForward forward = null;
       forward = new ActionForward();

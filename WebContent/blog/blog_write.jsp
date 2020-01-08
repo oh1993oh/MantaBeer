@@ -98,9 +98,16 @@
   
   </table>
   <section id="commandCell">
+<<<<<<< HEAD
 <input type="submit" class="btn btn-primary py-2 px-3" value="등록">&nbsp;&nbsp;
 <input type="reset" class="btn btn-primary py-2 px-3" value="다시쓰기">
 <a href="BlogList.bl" class="btn btn-primary py-2 px-3">뒤로</a>
+=======
+ <!-- <a href="blog-single.html" class="btn btn-primary py-2 px-3">등록</a> -->
+<input type="submit" class="btn btn-primary py-2 px-3" value="등록">&nbsp;&nbsp;
+<input type="reset" class="btn btn-primary py-2 px-3" value="다시쓰기">
+<a href="beer_blog.html" class="btn btn-primary py-2 px-3">뒤로</a>
+>>>>>>> branch 'master' of https://github.com/oh1993oh/MantaBeer.git
 
   </section>
     </form>
