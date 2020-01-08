@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <Context> -->
+<!-- 	<Resource -->
+<!-- 		name="jdbc/MySQL" -->
+<!-- 		auth="Container" -->
+<!-- 		type="javax.sql.DataSource"  -->
+<!-- 		username="root" -->
+<!-- 		password="1234" -->
+<!-- 		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" -->
+<!-- 		driverClassName="com.mysql.jdbc.Driver" -->
+<!-- 		url="jdbc:mysql://localhost:3306/teamTest" -->
+<!-- 		maxActive="500"		 -->
+<!-- 	/> -->
+<!-- </Context> -->
+
+<!-- <Context> -->
+<!-- 	<Resource -->
+<!-- 		name="jdbc/MySQL" -->
+<!-- 		auth="Container" -->
+<!-- 		type="javax.sql.DataSource"  -->
+<!-- 		username="itwillbs5" -->
+<!-- 		password="itwillbs8030909" -->
+<!-- 		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" -->
+<!-- 		driverClassName="com.mysql.jdbc.Driver" -->
+<!-- 		url="jdbc:mysql://localhost/itwillbs5" -->
+<!-- 		maxActive="500"		 -->
+<!-- 	/> -->
+<!-- </Context> -->
+
+
+<Context>
+	<Resource
+		name="jdbc/MySQL"
+		auth="Container"
+		type="javax.sql.DataSource" 
+		username="wangbeb"
+		password="db7033!!"
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost/wangbeb"
+		maxActive="500"		
+	/>
+</Context>

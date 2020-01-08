@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/* 카테고리 상위 단계의 클래스 이름들 */
+.letfno1{
+	float: left;
+	margin: 20px;
+    position: relative;
+    left: -104px;
+}
+.letfno2{
+	position: relative;
+	width: 74%;
+    left: 20px;
+    top: 12px;
+    float: left;
+    /* border: 4px solid green; */
+    border-radius: 40px;
+    padding: 32px;
+}
+
+
+
+/* 카테고리의  클레스 이름들 */
+
+.categori_boarder{
+	margin: 15px;
+    border: 1px solid gray;
+}
+
+.categori{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.categori_1main{
+	width:200px;
+	height : 50px;
+	text-align: left;
+	font-size : 30px;
+    margin: 10px;
+   /*  border: 1px solid green;
+    border-radius: 19px;
+    color: white;
+    background-color: #82ae46; */
+}
+.categori_2main{
+	margin: 10px;
+    font-size: 19px;
+    /* border: 1px solid green; */
+    color: black;
+}
+.no_1{
+	width: 209px;
+    height: 53px;
+    border-bottom: 1px solid gray;
+    vertical-align: top;
+    color: black;
+}
+
+
+
+.no_2{
+	width: 209px;
+    height: 53px;
+    vertical-align: top;
+    color: black;
+	
+}
+.no_3{
+	margin: 10px;
+/* 	border: 1px solid red; */
+}
+
+
+/* mypage */
+
+.main_content{
+	text-align: center;
+}
+
+.top_main{
+	width: 450px;
+    /* border: 1px solid red; */
+    font-weight: bold;
+    font-size: 26px;
+    color: black;
+}
+
+.mypage{
+	position: relative;
+    top: 0px;
+    left: 25px;
+    float: left;
+    padding: 5px;
+   
+	/* border: 1px solid blue; */
+}
+
+.btn_content{
+	position: relative;
+    top: 0px;
+    left: 25px;
+    float: left;
+    padding: 5px;
+}
+/*업데이트 버튼  */
+.update_bottom{
+	padding: 4px;
+    font-size: 15px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 22px;
+    margin: 2px;
+    position: relative;
+    left: 156px;
+}
+
+
+
+.name_w{
+	width: 141px;
+    /*background-color: #82ae46;*/
+    border-radius: 27px;
+    font-size: 16px;
+    color: black;
+}
+
+/*버튼 부분 */
+
+.btn_bottom{
+	padding: 4px;
+    font-size: 15px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 22px;
+    margin: 2px;
+    position: relative;
+    left: 226px;
+}
+
+/* .btn_bottom:hover{
+	cursor: pointer;
+} */
+
+
+/*   로그인 부분 css  */
+
+.top_main_login{
+	margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    /* border: 1px solid green;*/
+}
+
+.login_menu{
+	margin: 19px;
+    /* border: 1px solid green; */
+}
+.login_mu{
+	width: 600px;
+    height: 340px;
+    border: 1px solid white;
+    background : url("./images/beer/커버용 이미지.jpg");
+    color: white;
+    position: relative;
+    left: 623px;
+    bottom: -300px;
+}
+
+#loginForm{
+	margin: 10px;
+    text-align: center;
+}
+
+.login_btn{
+	background: white;
+    color: black;
+    border-radius: 14px;
+    width: 84px;
+    height: 34px;
+    text-align: center;
+}
+/* 주문확인 페이지     */
+
+/* 내용 위치 정하는곳 */
+.order_range{
+	position: relative;
+    left: 200px;
+}
+
+
+/*테이블 최상단 div */
+.order_comtain{
+	clear: both;
+}
+
+
+/* 테이블 클래스 */
+.order_table{
+	position: relative;
+    top: -390px;
+    border: 1px solid red;
+}
+/* tr */
+.order_tr{
+	border:  1px solid red;
+}
+
+/* 내용부분 ul  */
+.order_content_ul{
+	border:  1px solid green;
+	
+	
+}
+
+/* 제목부분 td */
+.order_td{
+	list-style: none;
+	float: left;
+    width: 100px;
+    margin: 10px;
+    border: 1px solid red;
+}
+
+
+/*내용부분 td  */
+
+.order_Contents{
+	width: 100px;
+    margin: 10px;
+    float: left;
+    border: 1px solid red;
+}
+
+/* 너비 조정용 div */
+.order_div{
+	clear: both;
+    width: 775px;
+    border: 1px solid blue;
+}
+/*   */
+
+
+
+.pay{
+	margin: 10px;
+	border-radius: 20px;
+	background: black;
+	float: left;
+	width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
