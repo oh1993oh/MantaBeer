@@ -35,7 +35,7 @@
 					<input type="text" name="user_id" required="required" size="20" style="position: relative;left: 7px;">
 				</div>
 				<div class="login_menu">
-					<label style=" margin: 10px;">패스워드</label>
+					<label style="margin: 10px;">패스워드</label>
 					<input type="password" name="user_pass" required="required" size="20">
 				</div>
 				<div class="login_menu">
