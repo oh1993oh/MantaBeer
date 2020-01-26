@@ -82,12 +82,15 @@
 					<li class="nav-item active"><a href="BeerMain.me"
 						class="nav-link">Home</a></li>
 					<li class="nav-item"><a href="Main.shop" class="nav-link">Shop</a></li>
-					<li class="nav-item"><a href="event.jsp" class="nav-link">Event</a></li>
+					<li class="nav-item"><a href="Event.shop" class="nav-link">Event</a></li>
 					<li class="nav-item"><a href="BlogList.bl" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="Reservation_write.me?" class="nav-link">Reservation</a></li>
+<!-- 					<li class="nav-item"><a href="Reservation_write.me?" class="nav-link">Reservation</a></li> -->
+					<% if(user_id == null){}else if(!user_id.equals("admin")){%>
 					<li class="nav-item cta cta-colored"><a href="Cart.shop"
 						class="nav-link"><span class="icon-shopping_cart"></span>[<%=cartQuantity%>]</a></li>
-
+					<%
+					}
+					%>
 				</ul>
 			</div>
 		</div>

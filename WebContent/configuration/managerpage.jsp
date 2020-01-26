@@ -12,7 +12,7 @@
 			<div class="ul_list" >
 				<ul class="manypay" style="list-style: none; position: relative; left: 16px;">
 					<li class="pay" ><a  class="payli" href="User_list.me" style="color: white;">결제관리</a></li>
-					<li  class="pay" ><a  class="payli" href="manager_Reservation_select.me" style="color: white;">예약관리</a></li>
+<!-- 					<li  class="pay" ><a  class="payli" href="manager_Reservation_select.me" style="color: white;">예약관리</a></li> -->
 					<li class="pay" ><a  class="payli" href="Inventory.me" style="color: white;">재고관리</a></li>
 					<li class="pay" ><a  class="payli" href="Revenue.me" style="color: white;">매출관리</a></li>
 				</ul>

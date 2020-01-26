@@ -44,6 +44,14 @@ public class Product_onCartAction implements Action {
 			out.println("alert('로그인 하신후 사용하실수 있는 기능입니다')");
 			out.println("history.back()");
 			out.println("</script>");
+		} else if(user_id.equals("admin")) {
+			respone.setContentType("text/html;charset=UTF-8");
+			PrintWriter out = respone.getWriter();
+			out.println("<script>");
+			out.println("alert('관리자 계정은 상품을 거래할수 없습니다.')");
+			out.println("history.back()");
+			out.println("</script>");
+			
 		} else {
 			// 유저번호 가져오기
 			product_onCartService = new Product_onCartService();

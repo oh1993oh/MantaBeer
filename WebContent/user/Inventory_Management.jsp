@@ -22,8 +22,6 @@
 		dataStr = dataStr + p.getProduct_Quantity();
 		dataStr = dataStr + ", ";
 	}
-
-	String test = "'qqq', '목넘김', '청량감', '단맛', '향', 'ㄱ맛', 'ㄱㄱㄱ','1', '2', '3', '1', '1', '1'";
 %>
 
 <!DOCTYPE html>
@@ -229,7 +227,29 @@
 	<script src="js/main.js"></script>
 	<script>
 		function Inventory_Management(pNum){
-			alert(pNum);
+			var quantity = prompt('문자열을 입력하세요', '기본 값 문자열');
+			
+			var digitCaseRegex = /[0-9]/; // 숫자
+			if (digitCaseRegex.exec(quantity)) {
+				if(quantity <= 0 ){
+					alert("수량은 0보다 큰숫자를 입력해주세요");
+				}else{
+					$.ajax({
+				        url: 'quantity_update.shop',
+				        data: {
+				        	quantity : quantity,
+				        	product_num : pNum,
+				        },
+				        dataType : 'json'
+				    });
+					
+					location.reload();//$$ 새로고침을 ajax로 고칠수 있음
+				}
+			}else{
+				alert('수량은 정수 숫자로 입력해주세요');
+			}
+			
+			
 		}
 	</script>
 </body>

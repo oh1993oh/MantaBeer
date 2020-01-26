@@ -272,6 +272,7 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
+	<script src="http://service.iamport.kr/js/iamport.payment-1.1.5.js"></script>
 
 	<script>
 	
@@ -283,13 +284,49 @@
 		
 		function PlaceAnOrder(){
 			if($('input[name="accept"]').is(":checked")){
-				alert("결제를 완료 했습니다");
-				var sel_adr = $(":input:radio[name=adressrdo]:checked").val();
-				var user_num = <%=adressList.get(0).getAdress_user_num()%>;
-				var adress_table_num = Number(sel_adr)+1
 				
-				location.href='PlaceAnOrder.shop?user_num='+user_num+'&adress_table_num='+adress_table_num;
 				
+				var IMP = window.IMP;
+		        var code = "iamport";  // FIXME: 가맹점 식별코드
+		        IMP.init(code);
+
+		        // 결제요청
+		        IMP.request_pay({
+		            // name과 amount만 있어도 결제 진행가능
+		            pg : 'html5_inicis', // pg 사 선택
+		            pay_method : 'card',
+		            merchant_uid : 'merchant_' + new Date().getTime(),
+		            name : '주문명:결제테스트',
+		            amount : 100,
+		            buyer_tel : $('.phone_numT').val(),
+		            buyer_addr : $('.post_numT').val(),
+		            buyer_postcode : $('.post_numT').val(),
+		        }, function(rsp) {
+		            if ( rsp.success ) {
+		                var msg = '결제가 완료되었습니다. \n';
+		                msg += '고유ID : ' + rsp.imp_uid + '\n';
+		                msg += '상점 거래ID : ' + rsp.merchant_uid + '\n';
+		                msg += '결제 금액 : ' + rsp.paid_amount + '\n';
+		                msg += '카드 승인번호 : ' + rsp.apply_num + '\n';
+		                
+		                alert(msg);
+		                
+		                
+		                var sel_adr = $(":input:radio[name=adressrdo]:checked").val();
+						var user_num = <%=adressList.get(0).getAdress_user_num()%>;
+						var adress_table_num = Number(sel_adr)+1
+						
+						location.href='PlaceAnOrder.shop?user_num='+user_num+'&adress_table_num='+adress_table_num;
+		            }
+		            else {
+		                var msg = '결제에 실패하였습니다. \n에러사유 : ' + rsp.error_msg
+		                
+		                alert(msg);
+
+		            }
+		           
+		        });
+
 			}else{
 				alert("결제에 동의해 주십시오");
 				return false;

@@ -22,6 +22,7 @@ import action.InsertReviewAction;
 import action.PlaceAnOrderAction;
 import action.Product_SingleAction;
 import action.ShopAction;
+import action.quantity_updateAction;
 import action.Product_onCartAction;
 import action.ReviewDeleteAction;
 import action.ReviewModifyAction;
@@ -149,10 +150,17 @@ public class ShopFrontController extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		} else if (command.contentEquals("/event.shop")) {
+		} else if (command.contentEquals("/Event.shop")) {
 			forward = new ActionForward();			
 			forward.setPath("/event.jsp");
-		}
+		}else if (command.contentEquals("/quantity_update.shop")) {
+			action = new quantity_updateAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} 
 		
 		
 		

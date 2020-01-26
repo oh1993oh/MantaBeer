@@ -924,13 +924,42 @@ public class UserDAO {
 		return user_num;
 	}
 
+//	public ArrayList<TradeBean> selectRevenue() {
+//		ArrayList<TradeBean> revenue = new ArrayList<TradeBean>();
+//		PreparedStatement pstmt = null;
+//		ResultSet rs = null;
+//
+//		try {
+//			String sql = "SELECT trade_quantity,trade_sale,product_price FROM trade WHERE trade_date LIKE '2019-12-%'";
+//			pstmt = con.prepareStatement(sql);
+//
+//			rs = pstmt.executeQuery();
+//
+//			while (rs.next()) {
+//				TradeBean tbean = new TradeBean();
+//				tbean.setTrade_quantity(rs.getInt("trade_quantity"));
+//				tbean.setTrade_sale(rs.getInt("trade_sale"));
+//				tbean.setProduct_price(rs.getInt("product_price"));
+//
+//				revenue.add(tbean);
+//			}
+//
+//		} catch (Exception e) {
+//			System.out.println("selectUser_num sql구문요청 에러 :" + e.getMessage());
+//		} finally {
+//			close(rs);
+//			close(pstmt);
+//		}
+//		System.out.println("revenue.size = " + revenue.size());
+//		return revenue;
+//	}
 	public ArrayList<TradeBean> selectRevenue() {
 		ArrayList<TradeBean> revenue = new ArrayList<TradeBean>();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 
 		try {
-			String sql = "SELECT trade_quantity,trade_sale,product_price FROM trade WHERE trade_date LIKE '2019-12-%'";
+			String sql = "SELECT trade_quantity,trade_sale,product_price,trade_date FROM trade";
 			pstmt = con.prepareStatement(sql);
 
 			rs = pstmt.executeQuery();
@@ -940,7 +969,7 @@ public class UserDAO {
 				tbean.setTrade_quantity(rs.getInt("trade_quantity"));
 				tbean.setTrade_sale(rs.getInt("trade_sale"));
 				tbean.setProduct_price(rs.getInt("product_price"));
-
+				tbean.setTrade_date(rs.getDate("trade_date"));
 				revenue.add(tbean);
 			}
 
@@ -950,7 +979,6 @@ public class UserDAO {
 			close(rs);
 			close(pstmt);
 		}
-		System.out.println("revenue.size = " + revenue.size());
 		return revenue;
 	}
 

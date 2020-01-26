@@ -102,9 +102,7 @@
 									<td class="image-prod"><div class="img" style="background-image: url(images/beer/<%=tradeBean.getProduct_product_num() %>_product.jpg);"></div></td>
 
 									<td class="product-name">
-										<h3><%=tradeBean.getProduct_name()%></h3>
-										<p>Far far away, behind the word mountains, far from the
-											countries</p>
+										<h3><%=tradeBean.getProduct_name()%></h3>										
 									</td>
 
 									<td class="price">

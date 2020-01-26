@@ -16,14 +16,7 @@ public class RevenueService {
 		UserDAO userDAO = UserDAO.getInstance();
 		userDAO.setConnection(con);
 		
-		
 		ArrayList<TradeBean> revenue = userDAO.selectRevenue();
-		
-		
-		
-		 
-		
-		
 		
 		
 		close(con);

@@ -1,9 +1,11 @@
+<%@page import="vo.RevenusBean"%>
 <%@page import="vo.TradeBean"%>
 <%@page import="vo.UserBean"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <%@ page import="java.util.*"%>
 <%
-	int revenue_12 = ((Integer)request.getAttribute("revenue_12"));
+	ArrayList<RevenusBean> revenusList = (ArrayList)request.getAttribute("revenueList");
+
 %>
 
 <!DOCTYPE html>
@@ -86,8 +88,13 @@
 				var ctx = document.getElementById('myChart').getContext('2d');
 				var data = {
 
-					labels : [ '1월', '2월', '3월', '4월', '5월', '6월', '7월',
-							'8월', '9월', '10월', '11월', '12월'],
+					labels : [ 
+					<%for(RevenusBean rb : revenusList){
+						%>
+						<%=rb.getMonth()%>+'월',
+						<%
+					}%>
+					],
 
 					datasets : [ {
 						"label" : "월별 매출(단위: 만원)",
@@ -95,7 +102,13 @@
 						barThickness : 2,
 						maxBarThickness : 8,
 						minBarLength : 2,
-						data : [ 10000, 13000, 23000, 7000, 15000, 25657, 22275, 13547, 18749, 23000, 7000, <%=revenue_12%> ]
+						data : [ 
+							<%for(RevenusBean rb : revenusList){
+								%>
+								<%=rb.getRevenus()%>,
+								<%
+							}%>
+						]
 					} ]
 				}
 				var options = {
@@ -104,8 +117,8 @@
 						yAxes: [{
 							ticks: {
 							    min: 0,
-							    max: 30000,
-							    stepSize: 3000
+							    max: 3000,
+							    stepSize: 300
 						    }
 						}],
 						xAxes : [ {

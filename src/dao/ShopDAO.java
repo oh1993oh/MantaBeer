@@ -1036,4 +1036,27 @@ public class ShopDAO {
 		}
 		return updateCount;
 	}
+
+	public int Quantity_update(int quantity, int product_num) {
+		PreparedStatement pstmt = null;
+
+		int deleteCount = 0;
+
+		try {
+			// board_num 에 해당하는 레코드 삭제
+
+			String sql = "UPDATE product SET product_quantity=? WHERE product_num=?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, quantity);
+			pstmt.setInt(2, product_num);
+			deleteCount = pstmt.executeUpdate();
+
+		} catch (SQLException e) {
+			System.out.println("deleteArticle() 오류 - " + e.getMessage());
+		} finally {
+			close(pstmt);
+		}
+
+		return deleteCount;
+	}
 }
