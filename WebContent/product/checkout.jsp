@@ -131,7 +131,7 @@
 								<div class="form-group">
 									<label for="phone_num">전화번호</label> <input type="text" style = "color:black !important;"
 										class="form-control phone_numT" placeholder="전화번호를 입력해주세요" 
-										value = <%=adressList.get(0).getAdress_phone_num() %>
+										value = "<%=adressList.get(0).getAdress_phone_num() %>"
 										readonly>
 								</div>
 							</div>
@@ -139,7 +139,7 @@
 								<div class="form-group">
 									<label for="post_num">우편번호</label> <input type="text" style = "color:black !important;"
 										class="form-control post_numT" placeholder="우편번호는 -을 제외한 5~6숫자" 
-										value = <%=adressList.get(0).getAdress_post_num() %>
+										value = "<%=adressList.get(0).getAdress_post_num() %>"
 										readonly>
 								</div>
 							</div>
@@ -150,7 +150,7 @@
 									<label for="address">주소</label> <input type="text" style = "color:black !important;"
 										class="form-control addressT"
 										placeholder="주소를 입력해주세요" 
-										value = <%=adressList.get(0).getAdress_adress() %>
+										value = "<%=adressList.get(0).getAdress_adress() %>"
 										readonly>
 								</div>
 							</div>
@@ -159,7 +159,7 @@
 									<label for="address_details">상세주소</label> <input type="text" style = "color:black !important;"
 										class="form-control address_detailsT"
 										placeholder="상세주소를 입력해주세요"
-										value = <%=adressList.get(0).getAdress_details() %>
+										value = "<%=adressList.get(0).getAdress_details() %>"
 										readonly>
 								</div>
 							</div>
@@ -304,10 +304,9 @@
 		        }, function(rsp) {
 		            if ( rsp.success ) {
 		                var msg = '결제가 완료되었습니다. \n';
-		                msg += '고유ID : ' + rsp.imp_uid + '\n';
-		                msg += '상점 거래ID : ' + rsp.merchant_uid + '\n';
 		                msg += '결제 금액 : ' + rsp.paid_amount + '\n';
 		                msg += '카드 승인번호 : ' + rsp.apply_num + '\n';
+		                msg += '배송지 : ' + $('.addressT').val() + '\n';
 		                
 		                alert(msg);
 		                

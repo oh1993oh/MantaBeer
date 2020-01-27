@@ -38,14 +38,11 @@ public class CheckOutAction implements Action {
 			out.println("</script>");
 		} else {
 			// 유저번호 가져오기
-			System.out.println("유저번호가져오기");
 			cartService = new CartService();
 			int user_num = cartService.getUser_num(user_id);
-			System.out.println(user_num);
 			adressList = cartService.getAdressList(user_num);
+			
 			checkOutList = cartService.getCartList(user_num);
-			System.out.println("adressSize = "+adressList.size());
-			System.out.println("checkOutListSize = "+checkOutList.size());
 			request.setAttribute("checkOutList", checkOutList);
 			request.setAttribute("adressList", adressList);
 
