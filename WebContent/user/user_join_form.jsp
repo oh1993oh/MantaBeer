@@ -191,10 +191,7 @@ h1 {
    }
    
    
-   function agecheck(){
-      alert('미성년자는 회원가입을 하실 수 없습니다.');
-      history.back(-1);
-   }
+
 </script>
 </head>
 <body class="body">
@@ -230,7 +227,7 @@ h1 {
                   <div class="join_text"
                      style="width: 115px; float: left; margin: 2px;">성명</div>
                   <input type="text" name="user_name" onkeyup="namecheck()"
-                     style="margin: 2px;">성인<input type="checkbox" required="required" >미성년자<input type="checkbox" onclick="agecheck()"><br>
+                     style="margin: 2px;">본인은 성인임을 확인합니다.<input type="checkbox" required="required" ><br>
                   <div class="join_text"
                      style="width: 115px; float: left; margin: 2px;">이메일 주소</div>
                   <input type="text" name="email1" required="required" size="10"
